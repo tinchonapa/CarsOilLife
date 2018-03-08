@@ -72,7 +72,18 @@ public class Cars {
 	}
 	
 	//Mutators
-
+	public void setYear(int year) {
+		this.year = year;
+	}
+	public void setMake(String make) {
+		this.make = make;
+	}
+	public void setModel(String model) {
+		this.model = model;
+	}
+	public void setVin(String vin) {
+		this.vin = vin;
+	}
 	public String makeCarID() {
 		String shortYear = String.valueOf(year);
 		shortYear = shortYear.substring(2);
