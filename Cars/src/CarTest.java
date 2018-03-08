@@ -6,8 +6,11 @@ public class CarTest {
 		// TODO Auto-generated method stub
 		Scanner input = new Scanner(System.in);
 		
+		int year; 
+		String make;
+		String model;
+		String vin;
 		
-		//Creation of objects
 		Cars c1 = new Cars(2014, "Ford", "Fusion","3FA6P0HD6GR160705", 23553, 26577, 4000 );
 		Cars c2 = new Cars(2017, "Ford", "Mustang","1FATP8UH5H5240463", 11053, 10610, 4000 );
 		Cars c3 = new Cars(2017, "Nissan", "Sentra","3N1AB7AP3HY258861", 7820, 11143, 5000 );
@@ -41,15 +44,25 @@ public class CarTest {
 		System.out.println("Oil Change Section ");
 		c4.milesLeft();
 		
-		//Ask for vehicle
-		//Ask the user for vehicle ID and bring info
-		/*
-		System.out.println("The information of what vehicle would you like to see?");
-		System.out.println("Please input the CarID");
-		String x;
-		input.nextLine(x);
-		x.makeCarID();
-		retrieveCar(x);*/
+		//User input car
+		Cars c5 = new Cars();
+		System.out.println("");
+		System.out.println("New vehicle to add? Please input the information.");
+		System.out.println("Vehicle Year: ");
+		year = input.nextInt();
+		c5.setYear(year);
+		System.out.println("Vehicle Make: ");
+		make = input.next();
+		c5.setMake(make);
+		System.out.println("Vehicle Model: ");
+		model = input.next();
+		c5.setModel(model);
+		System.out.println("Vehicle VIN#: ");
+		vin = input.next();
+		c5.setVin(vin);
+		System.out.println("");
+		System.out.println("Printing information.");
+		System.out.print(c5.getYear()+" "+c5.getMake()+" "+c5.getModel()+" "+c5.getVin());
 		
 		
 		
