@@ -6,6 +6,7 @@ public class CarTest {
 		// TODO Auto-generated method stub
 		Scanner input = new Scanner(System.in);
 		
+		/
 		String carID = ""; //Identification of the car. Equals Yr+Make+Model+Vin
 		int year = 2016; 
 		String make = "Toyota";
