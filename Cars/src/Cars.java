@@ -72,12 +72,7 @@ public class Cars {
 	}
 	
 	//Mutators
-	/*public String shortYear(int year) {
-		String shortYear = String.valueOf(year);
-		shortYear = shortYear.substring(2);
-		return shortYear;
-		int year, String make, String model, String vin
-	}*/
+
 	public String makeCarID() {
 		String shortYear = String.valueOf(year);
 		shortYear = shortYear.substring(2);
@@ -99,38 +94,6 @@ public class Cars {
 			System.out.println("OIL CHANGE NEEDED!!");
 		}
 	}
-	/*public void retrieveCar(String x) {
-		String choice = x;
-		if(choice == "c1") {
-			System.out.println("CarID: "+c1.makeCarID());
-			System.out.println("Year: "+c1.getYear());
-			System.out.println("Make: "+c1.getMake());
-			System.out.println("Model: "+c1.getModel());
-			System.out.println("Vin: "+c1.getVin());
-		} else if(choice == "c2") {
-			System.out.println("");
-			System.out.println("CarID: "+c2.makeCarID());
-			System.out.println("Year: "+c2.getYear());
-			System.out.println("Make: "+c2.getMake());
-			System.out.println("Model: "+c2.getModel());
-			System.out.println("Vin: "+c2.getVin());
-		} else if(choice == "c3"){
-			System.out.println("");
-			System.out.println("CarID: "+c3.makeCarID());
-			System.out.println("Year: "+c3.getYear());
-			System.out.println("Make: "+c3.getMake());
-			System.out.println("Model: "+c3.getModel());
-			System.out.println("Vin: "+c3.getVin());
-		} else if(choice == "c4") {
-			System.out.println("");
-			System.out.println("CarID: "+c4.makeCarID());
-			System.out.println("Year: "+c4.getYear());
-			System.out.println("Make: "+c4.getMake());
-			System.out.println("Model: "+c4.getModel());
-			System.out.println("Vin: "+c4.getVin());
-		} else {
-			System.out.println("Wrong Input");
-		}
-	}*/
+	
 
 }
