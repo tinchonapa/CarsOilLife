@@ -6,30 +6,8 @@ public class CarTest {
 		// TODO Auto-generated method stub
 		Scanner input = new Scanner(System.in);
 		
-		/
-		String carID = ""; //Identification of the car. Equals Yr+Make+Model+Vin
-		int year = 2016; 
-		String make = "Toyota";
-		String model = "Corolla";
-		String vin = "2T1BURHE4GC516671";
-		String year2 = String.valueOf(year);
 		
-		System.out.println("Printing Car info...");
-		System.out.println("Year: "+year);
-		System.out.println("Make: "+make);
-		System.out.println("Model: "+model);
-		System.out.println("Vin: "+vin);
-		
-		year2 = year2.substring(2);
-		make = make.substring(0,1);
-		model = model.substring(0, 2);
-		vin = vin.substring(13);
-		
-		//Creation of CarID
-		carID = year2+make+model+vin;
-		System.out.println("CarID: "+carID);
-		
-		//Through Class
+		//Creation of objects
 		Cars c1 = new Cars(2014, "Ford", "Fusion","3FA6P0HD6GR160705", 23553, 26577, 4000 );
 		Cars c2 = new Cars(2017, "Ford", "Mustang","1FATP8UH5H5240463", 11053, 10610, 4000 );
 		Cars c3 = new Cars(2017, "Nissan", "Sentra","3N1AB7AP3HY258861", 7820, 11143, 5000 );
